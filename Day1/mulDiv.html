@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply and Divide</title>
+</head>
+<body>
+    <form>
+      1st Number : <input type="text" id="firstNumber" /><br>
+      2nd Number: <input type="text" id="secondNumber" /><br>
+      <input type="button" onClick="calc()" Value="Calculate" /><br>
+    </form>
+    
+    <p>The Product is : <br>
+     <span id = "mul"></span>
+    </p>
+    <p>The Quotient is : <br>
+        <span id = "quot"></span>
+       </p>
+    
+    
+    <script>
+        function calc()
+        {
+          num1 = document.getElementById("firstNumber").value;
+          num2 = document.getElementById("secondNumber").value;
+          document.getElementById("mul").innerHTML = num1 * num2;
+            document.getElementById("quot").innerHTML = num1 / num2;
+        }
+      </script>
+            
+  </body>
+  
+</html>
